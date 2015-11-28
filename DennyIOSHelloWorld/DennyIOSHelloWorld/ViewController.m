@@ -20,8 +20,12 @@
     [self.view setBackgroundColor:[UIColor purpleColor]];
     UIImageView *denny_Top = [[UIImageView alloc]initWithFrame:CGRectMake(20, 65, self.view.frame.size.width-40, 200)];
     denny_Top.backgroundColor = [UIColor grayColor];
+    UILabel *denny_dec = [[UILabel alloc]initWithFrame:CGRectMake(20, 210, 200, 50)];
+    denny_dec.text = @"pictrue";
+    
     NSLog(@"%@",@"Hello World!");
     [self.view addSubview:denny_Top];
+    [self.view addSubview:denny_dec];
 }
 
 - (void)didReceiveMemoryWarning {
