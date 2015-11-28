@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.view setBackgroundColor:[UIColor purpleColor]];
+    UIImageView *denny_Top = [[UIImageView alloc]initWithFrame:CGRectMake(20, 65, self.view.frame.size.width-40, 200)];
+    denny_Top.backgroundColor = [UIColor grayColor];
+    NSLog(@"%@",@"Hello World!");
+    [self.view addSubview:denny_Top];
 }
 
 - (void)didReceiveMemoryWarning {
